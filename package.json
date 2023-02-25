@@ -1,0 +1,23 @@
+{
+  "name": "arcadius-api",
+  "version": "1.0.0",
+  "description": "An unofficial Arcadius API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slyrith/Arcadius-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Slyrith/Arcadius-API/issues"
+  },
+  "homepage": "https://github.com/Slyrith/Arcadius-API#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
