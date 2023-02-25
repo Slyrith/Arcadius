@@ -4,3 +4,9 @@
 <p>An unofficial Arcadius API</p>
 </div>
 <br>
+
+API is hosted on https://arcadius-azure.vercel.app/
+
+<h2>Base URL</h2>
+`https://arcadius-azure.vercel.app/`
+
