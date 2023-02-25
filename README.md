@@ -1,2 +1,2 @@
-# Arcadius-API
+# Arcadius
 An unofficial Arcadius API
