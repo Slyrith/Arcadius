@@ -3,12 +3,28 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.json(["/equipment/pickaxes", "/equipment/fishingrods", "/equipment/hatchets"]);
+  const responseData = [
+    "/pickaxes",
+    "/fishingrods",
+    "/hatchets"
+  ];
+  const formattedData = JSON.stringify(responseData, null, 2);
+  res.set('Content-Type', 'application/json');
+  res.send(formattedData);
 });
 
 router.get('/fishingrods', (req, res) => {
-  res.json(["/equipment/simplerod", "/equipment/birchrod", "/equipment/oakrod", "/equipment/advancerod"]);
+  const responseData = [
+    "/simplerod",
+    "/birchrod",
+    "/oakrod",
+    "/advancerod"
+  ];
+  const formattedData = JSON.stringify(responseData, null, 2);
+  res.set('Content-Type', 'application/json');
+  res.send(formattedData);
 });
+
 
 const simplerodRouter = require('./fishingrods/simplerod');
 const birchrodRouter = require('./fishingrods/birchrod');

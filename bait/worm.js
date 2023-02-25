@@ -3,14 +3,11 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   const responseData = {
-    Equipment: "Oak Rod",
-    Image: "https://static.wikia.nocookie.net/arcadius/images/9/95/Oak_Rod.png",
-    Level: "20",
-    Recipe: "15 Flax + 25 Maple Log + 5.000g Crafting Fee",
-    BaseImpact: "72",
-    BaseDurability: "360",
-    BaseTimeToCatch: "Unknown",
-    Perk: "none"
+    Bait: "Earth Worm",
+    Image: "https://static.wikia.nocookie.net/arcadius/images/0/01/Earth_worm_bait.png",
+    Cost: "15g",
+    Location: "Ocean",
+    Effect: "-5s Maximum Wait Time for Bite"
   };
   const formattedData = JSON.stringify(responseData, null, 2);
   res.set('Content-Type', 'application/json');

@@ -4,18 +4,20 @@ const loader = require('./loader');
 const app = express();
 
 const fishingrodsRouter = require('./equipment/fishingrods/fishingrods');
-const simplerodRouter = require('./equipment/fishingrods/simplerod');
-const birchrodRouter = require('./equipment/fishingrods/birchrod');
-const oakrodRouter = require('./equipment/fishingrods/oakrod');
-const advancerodRouter = require('./equipment/fishingrods/advancerod');
+const baitRouter = require('./bait/bait');
+const wormRouter = require('./bait/worm');
+const insectRouter = require('./bait/insect');
+
+const rods = ['/simplerod', '/birchrod', '/oakrod', '/advancerod'];
 
 app.use('/', loader);
 app.use('/equipment/fishingrods', fishingrodsRouter);
-app.use('/equipment/fishingrods/simplerod', simplerodRouter);
-app.use('/equipment/fishingrods/birchrod', birchrodRouter);
-app.use('/equipment/fishingrods/oakrod', oakrodRouter);
-app.use('/equipment/fishingrods/advancerod', advancerodRouter);
+rods.forEach((rod) => app.use(`/equipment/fishingrods${rod}`, require(`./equipment/fishingrods${rod}`)));
+app.use('/bait/bait', baitRouter);
+app.use('/bait/worm', wormRouter);
+app.use('/bait/insect', insectRouter);
 
-app.listen(3000, () => {
-  console.log('Server started on port 3000');
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
 });

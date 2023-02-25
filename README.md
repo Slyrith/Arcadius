@@ -4,5 +4,3 @@
 <p>An unofficial Arcadius API</p>
 </div>
 <br>
-
-Route: `/equipment`
