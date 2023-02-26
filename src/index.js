@@ -5,17 +5,19 @@ const app = express();
 
 const fishingrodsRouter = require('./equipment/fishingrods/fishingrods');
 const baitRouter = require('./bait/bait');
-const wormRouter = require('./bait/worm');
-const insectRouter = require('./bait/insect');
+const islandRouter = require('./island/islands');
 
+const islands = ['/chibi', '/magma'];
+const baits = ['/worm', 'insect'];
 const rods = ['/simplerod', '/birchrod', '/oakrod', '/advancerod'];
 
 app.use('/', loader);
-app.use('/equipment/fishingrods', fishingrodsRouter);
-rods.forEach((rod) => app.use(`/equipment/fishingrods${rod}`, require(`./equipment/fishingrods${rod}`)));
+app.use('/island', islandRouter);
 app.use('/bait/bait', baitRouter);
-app.use('/bait/worm', wormRouter);
-app.use('/bait/insect', insectRouter);
+app.use('/equipment/fishingrods', fishingrodsRouter);
+islands.forEach((island) => app.use(`/island/${island}`, require(`./island/${island}`)));
+baits.forEach((bait) => app.use(`/bait/${bait}`, require(`./bait/${bait}`)));
+rods.forEach((rod) => app.use(`/equipment/fishingrods${rod}`, require(`./equipment/fishingrods${rod}`)));
 
 const port = 3000;
 app.listen(port, () => {
