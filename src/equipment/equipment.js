@@ -4,9 +4,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   const responseData = [
-    "/pickaxes",
-    "/fishingrods",
-    "/hatchets"
+    "/fishingrods"
   ];
   const formattedData = JSON.stringify(responseData, null, 2);
   res.set('Content-Type', 'application/json');
