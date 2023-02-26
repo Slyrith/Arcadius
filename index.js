@@ -1,18 +1,18 @@
 const express = require('express');
-const loader = require('./loader');
+const loader = require('./src/loader');
 
 const app = express();
 
-const fishingrodsRouter = require('./equipment/fishingrods/fishingrods');
-const baitRouter = require('./bait/bait');
-const wormRouter = require('./bait/worm');
-const insectRouter = require('./bait/insect');
+const fishingrodsRouter = require('./src/equipment/fishingrods/fishingrods');
+const baitRouter = require('./src/bait/bait');
+const wormRouter = require('./src/bait/worm');
+const insectRouter = require('./src/bait/insect');
 
 const rods = ['/simplerod', '/birchrod', '/oakrod', '/advancerod'];
 
 app.use('/', loader);
 app.use('/equipment/fishingrods', fishingrodsRouter);
-rods.forEach((rod) => app.use(`/equipment/fishingrods${rod}`, require(`./equipment/fishingrods${rod}`)));
+rods.forEach((rod) => app.use(`/equipment/fishingrods${rod}`, require(`./src/equipment/fishingrods${rod}`)));
 app.use('/bait/bait', baitRouter);
 app.use('/bait/worm', wormRouter);
 app.use('/bait/insect', insectRouter);
