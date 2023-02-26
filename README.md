@@ -13,29 +13,4 @@ API is hosted on https://arcadius-azure.vercel.app/
 https://arcadius-azure.vercel.app/
 ```
 
-## Documentation
-There is a bunch of routes and methods, see all of them below.
-<br>
-
-## Equipment
-
-```
-https://arcadius-azure.vercel.app/equipment
-```
-
-show a list of equipment
-
-```
-[
-  "fishingrods"
-]
-```
-
-## Get All Fishing rods
-show a list of fishing rods
-
-```
-[
-  ""
-]
-```
+API Documentation soon!
