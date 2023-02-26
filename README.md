@@ -39,7 +39,7 @@ curl https://arcadius-azure.vercel.app/bait/worm
 
 
 ### TODO
-- [ ] Pickaxes
+- [x] Pickaxes
 - [ ] Axes
 - [ ] Sickles
 - [ ] Ores

@@ -10,7 +10,8 @@ router.get('/', (req, res) => {
       Status: "Online",
       Routes: [
         "/equipment",
-        "/bait"
+        "/bait",
+        "/island"
       ]
     };
     const formattedData = JSON.stringify(responseData, null, 2);
@@ -19,6 +20,10 @@ router.get('/', (req, res) => {
   });
 
 router.use('/equipment', equipment);
+
+router.use('island', require('./island/islands'))
+router.use('chibi', require('./island/chibi'))
+router.use('magma', require('./island/magma'))
 
 router.use('/bait', require('./bait/bait'));
 router.use('/bait/worm', require('./bait/worm'));
