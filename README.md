@@ -50,7 +50,7 @@ curl https://arcadius-azure.vercel.app/bait/worm
 - [ ] Mushrooms
 - [ ] Plants
 - [ ] NPC
-- [ ] Island
+- [x] Island
 - [ ] Areas
 
 In addition to these features, I also plan to create an API wrapper package to make it easier to interact with the Arcadius API in various programming languages.
