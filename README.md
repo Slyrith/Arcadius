@@ -9,7 +9,7 @@ https://arcadius-azure.vercel.app/
 ```
 
 ## Documentation
-The documentation for this API can be found on [GitHub](https://github.com/Slyrith/Arcadius).
+soon!
 
 ## Endpoints
 Here are the available endpoints for this API:
