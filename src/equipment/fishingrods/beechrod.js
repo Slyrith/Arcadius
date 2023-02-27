@@ -3,13 +3,13 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     const responseData = {
-        Equipment: "Simple Rod",
-        Image: "https://static.wikia.nocookie.net/arcadius/images/7/7b/Simple_Rod.png",
-        Level: 1,
-        Recipe: "5 Flax + 20 Birch Log + 500g Crafting Fee",
-        BaseImpact: 8,
-        BaseDurability: 40,
-        BaseTimeToCatch: "10 - 60 Seconds",
+        Equipment: "Beech Rod",
+        Image: "https://static.wikia.nocookie.net/arcadius/images/1/16/Fishing_rod_beech_rod-2022-05.png",
+        Level: 25,
+        Recipe: "15 Flax + 25 Beech Log + 15.000g Crafting Fee",
+        BaseImpact: 98,
+        BaseDurability: 490,
+        BaseTimeToCatch: "Unknown",
         Perk: "none"
     };
     const formattedData = JSON.stringify(responseData, null, 2);

@@ -3,12 +3,14 @@ const router = express.Router();
 
 const simplerod = require('./simplerod');
 const birchrod = require('./birchrod');
-const oakrod = require('./oakrod')
-const advancerod = require('./advancerod')
-// Add more fishing rod equipment here
+const oakrod = require('./oakrod');
+const beechrod = require('./beechrod');
+const advancerod = require('./advancerod');
+const ashrod = require('./ashrod');
+const whiteoakrod = require('./whiteoakrod');
 
 router.get('/', (req, res) => {
-  res.json([simplerod, birchrod, oakrod, advancerod]); // Return the list of fishing rods
+  res.json([simplerod, birchrod, oakrod, beechrod, advancerod, ashrod, whiteoakrod]);
 });
 
 module.exports = router;

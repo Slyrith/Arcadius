@@ -3,14 +3,13 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   const responseData = {
-    Equipment: "Oak Rod",
-    Image: "https://static.wikia.nocookie.net/arcadius/images/9/95/Oak_Rod.png",
-    Level: 20,
-    Recipe: "15 Flax + 25 Maple Log + 5.000g Crafting Fee",
-    BaseImpact: 72,
-    BaseDurability: 360,
-    BaseTimeToCatch: "Unknown",
-    Perk: "none"
+    Bait: "Dahila",
+    Tier: 1,
+    Image: "https://static.wikia.nocookie.net/arcadius/images/a/a4/Flower_dahila-2022-05.png",
+    Durability: 3,
+    Value: 5,
+    EXP: 1,
+    RespawnTime: "5s",
   };
   const formattedData = JSON.stringify(responseData, null, 2);
   res.set('Content-Type', 'application/json');
