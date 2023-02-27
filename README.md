@@ -15,9 +15,11 @@ The documentation for this API can be found on [GitHub](https://github.com/Slyri
 Here are the available endpoints for this API:
 
 - `GET /equipment/fishingrods`: Retrieves a list of all fishing rods.
-- `GET /equipment/fishingrods/:id`: Retrieves information about a specific fishing rod.
+- `GET /equipment/fishingrods/:rodname`: Retrieves information about a specific fishing rod.
 - `GET /bait`: Retrieves a list of all fishing baits.
-- `GET /bait/:id`: Retrieves information about a specific fishing bait.
+- `GET /bait/:baitname`: Retrieves information about a specific fishing bait.
+- `GET /island`: Retrieves a list of all islands.
+- `GET /island/:islandname`: Retrieves information about a specific island.
 
 And more endpoints are available in the API documentation.
 
