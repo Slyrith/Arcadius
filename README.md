@@ -50,7 +50,7 @@ curl https://arcadius-azure.vercel.app/bait/worm
 - [ ] Logs
 - [ ] Potions
 - [ ] Mushrooms
-- [ ] Plants
+- [x] Plants
 - [ ] NPC
 - [x] Island
 - [ ] Areas
