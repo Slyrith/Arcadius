@@ -20,6 +20,8 @@ Here are the available endpoints for this API:
 - `GET /bait/:baitname`: Retrieves information about a specific fishing bait.
 - `GET /island`: Retrieves a list of all islands.
 - `GET /island/:islandname`: Retrieves information about a specific island.
+- `GET /plants`: Retrieves a list of all plants.
+- `GET /plants/:plantname`: Retrieves information about a specific plant.
 
 And more endpoints are available in the API documentation.
 
