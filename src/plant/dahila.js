@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   const responseData = {
-    Bait: "Dahila",
+    Plant: "Dahila",
     Tier: 1,
     Image: "https://static.wikia.nocookie.net/arcadius/images/a/a4/Flower_dahila-2022-05.png",
     Durability: 3,

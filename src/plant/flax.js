@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   const responseData = {
-    Bait: "Flax",
+    Plant: "Flax",
     Tier: 3,
     Image: "https://static.wikia.nocookie.net/arcadius/images/9/98/Flower_flax-2022-05.png",
     Durability: 27,
