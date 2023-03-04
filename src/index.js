@@ -11,7 +11,7 @@ const plantsRouter = require('./plant/plants');
 const islands = ['/chibi', '/magma'];
 const baits = ['/worm', 'insect'];
 const rods = ['/simplerod', '/birchrod', '/oakrod', '/advancerod'];
-const plants = ['/dahila', '/flax', '/daisy'];
+const plants = ['/dahila', '/flax', '/daisy', '/vinca', '/night', '/amar', '/sun', '/blue', '/ice', '/moon', '/shade', '/purple', '/shadow', '/poison', '/blossom'];
 
 app.use('/', loader);
 app.use('/island', islandRouter);

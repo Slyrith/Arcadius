@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   const responseData = [
-    "/fishingrods"
+    "fishingrods"
   ];
   const formattedData = JSON.stringify(responseData, null, 2);
   res.set('Content-Type', 'application/json');
@@ -13,13 +13,13 @@ router.get('/', (req, res) => {
 
 router.get('/fishingrods', (req, res) => {
   const responseData = [
-    "/simplerod",
-    "/birchrod",
-    "/oakrod",
-    "/beechrod",
-    "/advancerod",
-    "/ashrod",
-    "/whiteoakrod"
+    "simplerod",
+    "birchrod",
+    "oakrod",
+    "beechrod",
+    "advancerod",
+    "ashrod",
+    "whiteoakrod"
   ];
   const formattedData = JSON.stringify(responseData, null, 2);
   res.set('Content-Type', 'application/json');

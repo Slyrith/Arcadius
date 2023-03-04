@@ -9,9 +9,9 @@ router.get('/', (req, res) => {
       Description: "Work in progress",
       Status: "Online",
       Routes: [
-        "/equipment",
-        "/bait",
-        "/island",
+        "/equipments",
+        "/baits",
+        "/islands",
         "/plants"
       ]
     };
@@ -20,13 +20,13 @@ router.get('/', (req, res) => {
     res.send(formattedData);
   });
 
-router.use('/equipment', equipment);
+router.use('/equipments', equipment);
 
-router.use('/island', require('./island/islands'));
+router.use('/islands', require('./island/islands'));
 router.use('/chibi', require('./island/chibi'));
 router.use('/magma', require('./island/magma'));
 
-router.use('/bait', require('./bait/bait'));
+router.use('/baits', require('./bait/bait'));
 router.use('/bait/worm', require('./bait/worm'));
 router.use('/bait/insect', require('./bait/insect'));
 
@@ -43,5 +43,17 @@ router.use('/plants', require('./plant/plants'));
 router.use('/plants/dahila', require('./plant/dahila'));
 router.use('/plant/flax', require('./plant/flax'));
 router.use('/plant/daisy', require('./plant/daisy'));
+router.use('/plant/vinca', require('./plant/vinca'));
+router.use('/plant/night', require('./plant/night'));
+router.use('/plant/amar', require('./plant/amar'));
+router.use('/plant/sun', require('./plant/sun'));
+router.use('/plant/blue', require('./plant/blue'));
+router.use('/plant/ice', require('./plant/ice'));
+router.use('/plant/moon', require('./plant/moon'));
+router.use('/plant/shade', require('./plant/shade'));
+router.use('/plant/purple', require('./plant/purple'));
+router.use('/plant/shadow', require('./plant/shadow'));
+router.use('/plant/poison', require('./plant/poison'));
+router.use('/plant/blossom', require('./plant/blossom'));
 
 module.exports = router;
