@@ -14,12 +14,12 @@ soon!
 ## Endpoints
 Here are the available endpoints for this API:
 
-- `GET /equipment/fishingrods`: Retrieves a list of all fishing rods.
-- `GET /equipment/fishingrods/:rodname`: Retrieves information about a specific fishing rod.
-- `GET /bait`: Retrieves a list of all fishing baits.
-- `GET /bait/:baitname`: Retrieves information about a specific fishing bait.
-- `GET /island`: Retrieves a list of all islands.
-- `GET /island/:islandname`: Retrieves information about a specific island.
+- `GET /equipments/fishingrods`: Retrieves a list of all fishing rods.
+- `GET /equipments/fishingrods/:rodname`: Retrieves information about a specific fishing rod.
+- `GET /baits`: Retrieves a list of all fishing baits.
+- `GET /baits/:baitname`: Retrieves information about a specific fishing bait.
+- `GET /islands`: Retrieves a list of all islands.
+- `GET /islands/:islandname`: Retrieves information about a specific island.
 - `GET /plants`: Retrieves a list of all plants.
 - `GET /plants/:plantname`: Retrieves information about a specific plant.
 
@@ -30,15 +30,15 @@ Here are some example requests using cURL:
 
 Retrieves a list of all fishing rods
 ```console
-curl https://arcadius-azure.vercel.app/equipment/fishingrods
+curl https://arcadius-azure.vercel.app/equipments/fishingrods
 ```
 Retrieves information about a specific fishing rod
 ```console
-curl https://arcadius-azure.vercel.app/equipment/fishingrods/simplerod
+curl https://arcadius-azure.vercel.app/equipments/fishingrods/simplerod
 ```
 Retrieves information about the worm bait
 ```console
-curl https://arcadius-azure.vercel.app/bait/worm
+curl https://arcadius-azure.vercel.app/baits~/worm
 ```
 
 
